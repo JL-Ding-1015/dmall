@@ -35,6 +35,13 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!--依赖api-->
+        <dependency>
+            <groupId>com.djl.dmall</groupId>
+            <artifactId>dmall-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

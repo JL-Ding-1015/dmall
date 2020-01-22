@@ -29,7 +29,7 @@ class DmallPmsApplicationTests {
         brandService.save(brand);
         System.out.println("保存操作执行了......");*/
         //人为造成主从不一致之后，进行读取测试
-        Brand brand = brandService.getById(53);
+        Brand brand = brandService.getById(50);
         System.out.println(brand.getName());
     }
 

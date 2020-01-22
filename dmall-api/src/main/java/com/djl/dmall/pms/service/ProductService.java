@@ -2,6 +2,8 @@ package com.djl.dmall.pms.service;
 
 import com.djl.dmall.pms.entity.Product;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.djl.dmall.vo.PageInfoVo;
+import com.djl.dmall.vo.product.PmsProductQueryParam;
 
 /**
  * <p>
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ProductService extends IService<Product> {
 
+    PageInfoVo productPageInfo(PmsProductQueryParam productQueryParam);
 }

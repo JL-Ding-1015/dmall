@@ -2,6 +2,7 @@ package com.djl.dmall.pms.service;
 
 import com.djl.dmall.pms.entity.Brand;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.djl.dmall.vo.PageInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface BrandService extends IService<Brand> {
 
+    PageInfoVo brandPageInfo(String keyword, Integer pageNum, Integer pageSize);
 }
