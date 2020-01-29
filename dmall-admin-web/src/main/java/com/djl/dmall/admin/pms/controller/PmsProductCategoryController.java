@@ -86,7 +86,6 @@ public class PmsProductCategoryController {
         // 查询任意菜单以及他下面的所有子菜单
 
         List<PmsProductCategoryWithChildrenItem> items = productCategoryService.listCategoryWithChild(0);
-//        List<PmsProductCategoryWithChildrenItem> items = null;
         return new CommonResult().success(items);
     }
 }

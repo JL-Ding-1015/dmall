@@ -1,6 +1,7 @@
 package com.djl.dmall.admin.pms.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.djl.dmall.pms.entity.Product;
 import com.djl.dmall.pms.service.ProductService;
 import com.djl.dmall.to.CommonResult;
 import com.djl.dmall.vo.PageInfoVo;
@@ -36,7 +37,7 @@ public class PmsProductController {
 
 
 //        log.debug("当前线程....{}-->{}",Thread.currentThread().getId(),Thread.currentThread().getName());
-//        productService.saveProduct(productParam);
+        productService.saveProduct(productParam);
 
         return new CommonResult().success(null);
     }
@@ -45,7 +46,8 @@ public class PmsProductController {
     @GetMapping(value = "/updateInfo/{id}")
     public Object getUpdateInfo(@PathVariable Long id) {
         //TODO 根据商品id获取商品编辑信息
-        return new CommonResult().success(null);
+        Product product = productService.getById(id);
+        return new CommonResult().success(product);
     }
 
     @ApiOperation("更新商品")

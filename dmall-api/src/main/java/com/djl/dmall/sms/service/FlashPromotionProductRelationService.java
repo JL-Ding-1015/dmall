@@ -2,6 +2,7 @@ package com.djl.dmall.sms.service;
 
 import com.djl.dmall.sms.entity.FlashPromotionProductRelation;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.djl.dmall.vo.PageInfoVo;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FlashPromotionProductRelationService extends IService<FlashPromotionProductRelation> {
 
+    PageInfoVo listRelationForPage(Long flashPromotionId, Long flashPromotionSessionId, Integer pageSize, Integer pageNum);
 }

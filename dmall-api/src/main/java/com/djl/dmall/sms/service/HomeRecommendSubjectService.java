@@ -2,6 +2,9 @@ package com.djl.dmall.sms.service;
 
 import com.djl.dmall.sms.entity.HomeRecommendSubject;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.djl.dmall.vo.PageInfoVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface HomeRecommendSubjectService extends IService<HomeRecommendSubject> {
 
+    void updateSort(Long id, Integer sort);
+
+    void updateRecommendStatus(List<Long> ids, Integer recommendStatus);
+
+    PageInfoVo listForPage(String subjectName, Integer recommendStatus, Integer pageSize, Integer pageNum);
 }

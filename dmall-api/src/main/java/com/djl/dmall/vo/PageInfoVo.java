@@ -39,9 +39,9 @@ public class PageInfoVo implements Serializable {
 
 
 
-    /*public static PageInfoVo getVo(IPage iPage,Long size){
+    public static PageInfoVo getVo(IPage iPage,Long size){
         return new PageInfoVo(iPage.getTotal(),iPage.getPages(),size,iPage.getRecords(),
                 iPage.getCurrent());
 
-    }*/
+    }
 }

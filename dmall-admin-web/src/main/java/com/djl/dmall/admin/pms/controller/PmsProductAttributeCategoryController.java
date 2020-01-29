@@ -8,8 +8,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 /**
  * 商品属性分类Controller
  * Created by atguigu 4/26.
@@ -58,8 +56,8 @@ public class PmsProductAttributeCategoryController {
                           @RequestParam(defaultValue = "1") Integer pageNum) {
 
 
-//        PageInfoVo pageInfoVo = productAttributeCategoryService.roductAttributeCategoryPageInfo(pageNum,pageSize);
-        PageInfoVo pageInfoVo = null;
+        PageInfoVo pageInfoVo = productAttributeCategoryService.productAttributeCategoryPageInfo(pageNum,pageSize);
+//        PageInfoVo pageInfoVo = null;
         return new CommonResult().success(pageInfoVo);
     }
 
