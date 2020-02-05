@@ -1,0 +1,1836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b05ec590-7c3d-4248-a7bd-3cc38eabd8fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/Client1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/config/SsoConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client1/src/test/java/com/djl/dmall/client1/Client1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/EsConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/search/SearchProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/to/es/EsProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/to/es/EsProductAttributeValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/to/es/EsSkuProductInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/search/SearchParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/search/SearchResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/search/SearchResponseAttrVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/ums/LoginResponseVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/Help.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/HelpCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/MemberReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/PrefrenceArea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/PrefrenceAreaProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/SubjectCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/SubjectComment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/SubjectProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/Topic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/TopicCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/entity/TopicComment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/HelpCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/HelpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/MemberReportService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/PrefrenceAreaProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/PrefrenceAreaService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/SubjectCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/SubjectCommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/SubjectProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/SubjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/TopicCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/TopicCommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/cms/service/TopicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/contant/EsConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/contant/SysCacheConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/CartItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/CompanyAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/OrderItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/OrderOperateHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/OrderReturnApply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/OrderReturnReason.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/entity/OrderSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/CartItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/CompanyAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderOperateHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderReturnApplyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderReturnReasonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/oms/service/OrderSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/Album.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/AlbumPic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/Brand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/Comment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/CommentReplay.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/FeightTemplate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/MemberPrice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductAttribute.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductAttributeCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductAttributeValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductCategoryAttributeRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductFullReduction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductLadder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductOperateLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/ProductVertifyRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/entity/SkuStock.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/AlbumPicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/AlbumService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/BrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/CommentReplayService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/CommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/FeightTemplateService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/MemberPriceService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductAttributeCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductAttributeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductAttributeValueService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductCategoryAttributeRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductFullReductionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductLadderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductOperateLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/ProductVertifyRecordService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/pms/service/SkuStockService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/search/SearchProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/Coupon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/CouponHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/CouponProductCategoryRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/CouponProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/FlashPromotion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/FlashPromotionLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/FlashPromotionProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/FlashPromotionSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/HomeAdvertise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/HomeBrand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/HomeNewProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/HomeRecommendProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/entity/HomeRecommendSubject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/CouponHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/CouponProductCategoryRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/CouponProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/CouponService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/FlashPromotionLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/FlashPromotionProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/FlashPromotionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/FlashPromotionSessionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/HomeAdvertiseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/HomeBrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/HomeNewProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/HomeRecommendProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/sms/service/HomeRecommendSubjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/to/CommonResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/to/OssPolicyResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/to/es/EsProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/to/es/EsProductAttributeValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/to/es/EsSkuProductInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/AdminLoginLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/AdminPermissionRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/AdminRoleRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/GrowthChangeHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/IntegrationChangeHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/IntegrationConsumeSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberLevel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberLoginLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberMemberTagRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberProductCategoryRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberReceiveAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberRuleSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberStatisticsInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberTag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/MemberTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/entity/RolePermissionRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/AdminLoginLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/AdminPermissionRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/AdminRoleRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/AdminService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/GrowthChangeHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/IntegrationChangeHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/IntegrationConsumeSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberLevelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberLoginLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberMemberTagRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberProductCategoryRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberReceiveAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberRuleSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberStatisticsInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberTagService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/MemberTaskService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/RolePermissionRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/ums/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/PageInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsBrandParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductAttributeCategoryItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductAttributeParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductCategoryParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductCategoryWithChildrenItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductQueryParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/PmsProductResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/product/ProductAttrInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/search/SearchParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/search/SearchResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/search/SearchResponseAttrVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/sms/SmsCouponParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/sms/SmsFlashPromotionProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/sms/SmsFlashPromotionSessionDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-api/target/classes/com/djl/dmall/vo/ums/LoginResponseVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/CodeGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/Help.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/HelpCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/MemberReport.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/PrefrenceArea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/PrefrenceAreaProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/Subject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/SubjectCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/SubjectComment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/SubjectProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/Topic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/TopicCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/entity/TopicComment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/HelpCategoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/HelpMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/MemberReportMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/PrefrenceAreaMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/PrefrenceAreaProductRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/SubjectCategoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/SubjectCommentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/SubjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/SubjectProductRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/TopicCategoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/TopicCommentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/mapper/TopicMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/HelpCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/HelpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/MemberReportService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/PrefrenceAreaProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/PrefrenceAreaService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/SubjectCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/SubjectCommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/SubjectProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/SubjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/TopicCategoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/TopicCommentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/TopicService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/HelpCategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/HelpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/MemberReportServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/PrefrenceAreaProductRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/PrefrenceAreaServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/SubjectCategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/SubjectCommentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/SubjectProductRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/SubjectServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/TopicCategoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/TopicCommentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/cms/service/impl/TopicServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/CartItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/CompanyAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/Order.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/OrderItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/OrderOperateHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/OrderReturnApply.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/OrderReturnReason.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/entity/OrderSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/CartItemMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/CompanyAddressMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderItemMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderOperateHistoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderReturnApplyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderReturnReasonMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/mapper/OrderSettingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/CartItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/CompanyAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderOperateHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderReturnApplyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderReturnReasonService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/OrderSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/CartItemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/CompanyAddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderItemServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderOperateHistoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderReturnApplyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderReturnReasonServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/oms/service/impl/OrderSettingServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/Coupon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/CouponHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/CouponProductCategoryRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/CouponProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/FlashPromotion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/FlashPromotionLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/FlashPromotionProductRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/FlashPromotionSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/HomeAdvertise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/HomeBrand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/HomeNewProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/HomeRecommendProduct.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/entity/HomeRecommendSubject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/CouponHistoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/CouponMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/CouponProductCategoryRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/CouponProductRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/FlashPromotionLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/FlashPromotionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/FlashPromotionProductRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/FlashPromotionSessionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/HomeAdvertiseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/HomeBrandMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/HomeNewProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/HomeRecommendProductMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/mapper/HomeRecommendSubjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/CouponHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/CouponProductCategoryRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/CouponProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/CouponService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/FlashPromotionLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/FlashPromotionProductRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/FlashPromotionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/FlashPromotionSessionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/HomeAdvertiseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/HomeBrandService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/HomeNewProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/HomeRecommendProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/HomeRecommendSubjectService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/CouponHistoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/CouponProductCategoryRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/CouponProductRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/CouponServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/FlashPromotionLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/FlashPromotionProductRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/FlashPromotionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/FlashPromotionSessionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/HomeAdvertiseServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/HomeBrandServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/HomeNewProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/HomeRecommendProductServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/sms/service/impl/HomeRecommendSubjectServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/Admin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/AdminLoginLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/AdminPermissionRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/AdminRoleRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/GrowthChangeHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/IntegrationChangeHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/IntegrationConsumeSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/Member.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberLevel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberLoginLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberMemberTagRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberProductCategoryRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberReceiveAddress.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberRuleSetting.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberStatisticsInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberTag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/MemberTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/entity/RolePermissionRelation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/AdminLoginLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/AdminMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/AdminPermissionRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/AdminRoleRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/GrowthChangeHistoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/IntegrationChangeHistoryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/IntegrationConsumeSettingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberLevelMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberLoginLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberMemberTagRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberProductCategoryRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberReceiveAddressMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberRuleSettingMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberStatisticsInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberTagMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/MemberTaskMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/PermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/RoleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/mapper/RolePermissionRelationMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/AdminLoginLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/AdminPermissionRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/AdminRoleRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/AdminService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/GrowthChangeHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/IntegrationChangeHistoryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/IntegrationConsumeSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberLevelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberLoginLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberMemberTagRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberProductCategoryRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberReceiveAddressService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberRuleSettingService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberStatisticsInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberTagService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/MemberTaskService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/RolePermissionRelationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/AdminLoginLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/AdminPermissionRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/AdminRoleRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/AdminServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/GrowthChangeHistoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/IntegrationChangeHistoryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/IntegrationConsumeSettingServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberLevelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberLoginLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberMemberTagRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberProductCategoryRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberReceiveAddressServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberRuleSettingServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberStatisticsInfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberTagServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/MemberTaskServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/RolePermissionRelationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-mbg/target/classes/com/djl/dmall/ums/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/DmallSearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-search/src/test/java/com/djl/dmall/search/DmallSearchApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/DmallShopPortalApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/GmallSwagger2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/PoolProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/ThreadPoolConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductSearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-shop-portal/src/test/java/com/djl/dmall/portal/DmallShopProtalApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/resources.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sms/src/main/resources/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/DmallSsoServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dmall-sso-server/src/test/java/com/djl/dmall/DmallSsoServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/LocksTestApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/AppJedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/LockTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedisIncrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedissonLockService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locks-test/src/test/java/com/djl/dmall/locks/LocksTestApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-admin-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-admin-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/SysCacheConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/SysCacheConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/ums/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/ums/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductAttributeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductAttributeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductAttributeValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductAttributeValueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/mapper/ProductMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductAttributeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductAttributeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductAttributeValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductAttributeValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberServiceImpl.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-common/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-api/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-pms/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-ums/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-oms/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-sms/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-admin-web/target/" />
+    <ignored path="dmall-admin-web/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="dmall-admin-web/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="dmall-admin-web/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored mask="*.gitignore" />
+    <ignored mask="mvnw" />
+    <ignored mask="*.cmd" />
+    <ignored path="dmall-ums/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="dmall-ums/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="dmall-ums/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="dmall-sms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="dmall-sms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="dmall-sms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="dmall-pms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="dmall-pms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="dmall-pms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="dmall-oms/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="dmall-oms/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="dmall-oms/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path=".idea/compiler.xml" />
+    <ignored path=".idea/encodings.xml" />
+    <ignored path=".idea/misc.xml" />
+    <ignored path=".idea/vcs.xml" />
+    <ignored path="dmall-parent.iml" />
+    <ignored path="$PROJECT_DIR$/dmall-mbg/target/" />
+    <ignored path="$PROJECT_DIR$/es-demo/target/" />
+    <ignored path="es-demo/.mvn/wrapper/maven-wrapper.jar" />
+    <ignored path="es-demo/.mvn/wrapper/maven-wrapper.properties" />
+    <ignored path="es-demo/.mvn/wrapper/MavenWrapperDownloader.java" />
+    <ignored path="$PROJECT_DIR$/dmall-search/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-shop-protal/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-shop-portal/target/" />
+    <ignored path="$PROJECT_DIR$/locks-test/target/" />
+    <ignored path="$PROJECT_DIR$/client1/target/" />
+    <ignored path="$PROJECT_DIR$/dmall-sso-server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/ums/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dmall-mbg/src/main/java/com/djl/dmall/ums/mapper/MemberMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>atguigu</find>
+      <find>Admin</find>
+      <find>atguigu.gmall</find>
+      <find>list</find>
+      <find>&lt;p&gt;</find>
+      <find>atguigu.g</find>
+      <find>update</find>
+      <find>insert</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>djl.dmall</replace>
+      <replace>djl.d</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/dmall-pms/src/main/resources/xml/ProductAttributeValueMapper.xml" />
+        <option value="$PROJECT_DIR$/dmall-admin-web/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-pms/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/EsConstant.java" />
+        <option value="$PROJECT_DIR$/dmall-pms/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-admin-web/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/search/SearchParam.java" />
+        <option value="$PROJECT_DIR$/dmall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-search/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/DmallSearchApplication.java" />
+        <option value="$PROJECT_DIR$/dmall-admin-web/src/main/java/search/SearchProductService.java" />
+        <option value="$PROJECT_DIR$/dmall-admin-web/src/main/java/com/djl/dmall/admin/search/SearchProductService.java" />
+        <option value="$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/impl/SearchProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-protal/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-shop-protal/src/main/java/com/djl/dmall/protal/DmallShopProtalApplication.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-protal/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/search/SearchProductService.java" />
+        <option value="$PROJECT_DIR$/dmall-search/src/test/java/com/djl/dmall/search/DmallSearchApplicationTests.java" />
+        <option value="$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/GmallSwagger2Config.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductSearchController.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/AppJedisConfig.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/locks-test/pom.xml" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/RedissonConfig.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/LockTestController.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedisIncrService.java" />
+        <option value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedissonLockService.java" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductItemController.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/PoolProperties.java" />
+        <option value="$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/ThreadPoolConfig.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/ssoserver/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/config/SsoConfigProperties.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/client1/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/client1/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/client1/pom.xml" />
+        <option value="$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/ums/service/MemberService.java" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/SysCacheConstant.java" />
+        <option value="$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/ums/LoginResponseVo.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/DmallSsoServerApplication.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberServiceImpl.java" />
+        <option value="$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/controller/LoginController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JAVA_Files\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\JAVA_Files\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="9" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dmall-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dmall-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=gbk" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-140" />
+    <option name="y" value="223" />
+    <option name="width" value="1705" />
+    <option name="height" value="908" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="es-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="es-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="es-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="es-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dmall-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dmall-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="es-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="esdemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\dmall-sms\src\main\resources" />
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\dmall-api\src\main\java\com\djl\dmall\vo\product" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\locks-test\src\main\java\com\djl\dmall\locks\service" />
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\locks-test\src\main\java\com\djl\dmall\locks\controller" />
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\locks-test\src\main\java\com\djl\dmall\locks" />
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\dmall-search\src\main\resources" />
+      <recent name="D:\JAVA_Files\IdeaProjects\project01\dmall-parent\dmall-api\src\main\java\com\djl\dmall\to" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.djl.dmall.portal.config" />
+      <recent name="com.djl.dmall.sms.config" />
+      <recent name="com.djl.dmall.ums.config" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.djl.dmall.to.es" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.19372295" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.DmallSsoServerApplication (1)">
+    <configuration name="SsoTest" type="CompoundRunConfigurationType">
+      <toRun name="Client1Application" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallSsoServerApplication (1)" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType">
+      <toRun name="Client1Application" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallSsoServerApplication (1)" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dmall" type="CompoundRunConfigurationType">
+      <toRun name="DmallShopProtalApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallPmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallUmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallSmsApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallSearchApplication" type="SpringBootApplicationConfigurationType" />
+      <toRun name="DmallAdminWebApplication" type="SpringBootApplicationConfigurationType" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DmallPmsApplicationTests.myTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmall-pms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.djl.dmall.pms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.djl.dmall.pms" />
+      <option name="MAIN_CLASS_NAME" value="com.djl.dmall.pms.DmallPmsApplicationTests" />
+      <option name="METHOD_NAME" value="myTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallPmsApplicationTests.myTestObj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmall-pms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.djl.dmall.pms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.djl.dmall.pms" />
+      <option name="MAIN_CLASS_NAME" value="com.djl.dmall.pms.DmallPmsApplicationTests" />
+      <option name="METHOD_NAME" value="myTestObj" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallSearchApplicationTests.dslTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dmall-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.djl.dmall.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.djl.dmall.search" />
+      <option name="MAIN_CLASS_NAME" value="com.djl.dmall.search.DmallSearchApplicationTests" />
+      <option name="METHOD_NAME" value="dslTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsDemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.djl.esdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.djl.esdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.djl.esdemo.EsDemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsDemoApplicationTests.myTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="es-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.djl.esdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.djl.esdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.djl.esdemo.EsDemoApplicationTests" />
+      <option name="METHOD_NAME" value="myTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="client1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.client1.Client1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallAdminWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-admin-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.admin.DmallAdminWebApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallOmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-oms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.oms.DmallOmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallPmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-pms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.pms.DmallPmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.search.DmallSearchApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallShopProtalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-shop-portal" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.portal.DmallShopPortalApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallSmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-sms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.sms.DmallSmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallSsoServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-sso-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.DmallSsoServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DmallUmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="dmall-ums" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.ums.DmallUmsApplication" />
+      <option name="VM_PARAMETERS" value="-Xms50m -Xmx150m" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EsDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="es-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.esdemo.EsDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocksTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="locks-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.djl.dmall.locks.LocksTestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Compound.SsoTest" />
+      <item itemvalue="Compound.dmall" />
+      <item itemvalue="JUnit.DmallPmsApplicationTests.myTest" />
+      <item itemvalue="JUnit.DmallPmsApplicationTests.myTestObj" />
+      <item itemvalue="JUnit.EsDemoApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.EsDemoApplicationTests.myTest" />
+      <item itemvalue="JUnit.DmallSearchApplicationTests.dslTest" />
+      <item itemvalue="Spring Boot.DmallAdminWebApplication" />
+      <item itemvalue="Spring Boot.DmallOmsApplication" />
+      <item itemvalue="Spring Boot.DmallPmsApplication" />
+      <item itemvalue="Spring Boot.DmallSmsApplication" />
+      <item itemvalue="Spring Boot.DmallUmsApplication" />
+      <item itemvalue="Spring Boot.EsDemoApplication" />
+      <item itemvalue="Spring Boot.DmallSearchApplication" />
+      <item itemvalue="Spring Boot.DmallShopProtalApplication" />
+      <item itemvalue="Spring Boot.LocksTestApplication" />
+      <item itemvalue="Spring Boot.Client1Application" />
+      <item itemvalue="Spring Boot.DmallSsoServerApplication (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DmallSearchApplicationTests.dslTest" />
+        <item itemvalue="JUnit.EsDemoApplicationTests.myTest" />
+        <item itemvalue="JUnit.EsDemoApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.DmallPmsApplicationTests.myTestObj" />
+        <item itemvalue="JUnit.DmallPmsApplicationTests.myTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b05ec590-7c3d-4248-a7bd-3cc38eabd8fd" name="Default Changelist" comment="" />
+      <created>1579526126199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579526126199</updated>
+      <workItem from="1579526151533" duration="2463000" />
+      <workItem from="1579528737482" duration="7105000" />
+      <workItem from="1579577925422" duration="21650000" />
+      <workItem from="1579663804676" duration="4277000" />
+      <workItem from="1579674751596" duration="180000" />
+      <workItem from="1579674979805" duration="19127000" />
+      <workItem from="1579768539540" duration="16844000" />
+      <workItem from="1580020332617" duration="25219000" />
+      <workItem from="1580102223079" duration="9559000" />
+      <workItem from="1580117631478" duration="38000" />
+      <workItem from="1580117706912" duration="34000" />
+      <workItem from="1580117783216" duration="9498000" />
+      <workItem from="1580194807848" duration="1606000" />
+      <workItem from="1580280660248" duration="2083000" />
+      <workItem from="1580289896854" duration="7594000" />
+      <workItem from="1580365644488" duration="12106000" />
+      <workItem from="1580449141412" duration="6898000" />
+      <workItem from="1580540489768" duration="16551000" />
+      <workItem from="1580622267516" duration="12554000" />
+      <workItem from="1580713526586" duration="3906000" />
+      <workItem from="1580720855654" duration="3853000" />
+      <workItem from="1580816148625" duration="996000" />
+      <workItem from="1580817221015" duration="5677000" />
+      <workItem from="1580890744230" duration="18765000" />
+    </task>
+    <task id="LOCAL-00001" summary="项目结构的创建">
+      <created>1579527787930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1579527787930</updated>
+    </task>
+    <task id="LOCAL-00002" summary="项目结构的创建-逆向工程初始化">
+      <created>1579528197128</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1579528197128</updated>
+    </task>
+    <task id="LOCAL-00003" summary="项目结构的创建-PMS基本框架的搭建（主从库实现，部分pms/ServiceImpl修改dubbo注解，pms/Entity所有添加getter、setter方法）">
+      <created>1579539477061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579539477062</updated>
+    </task>
+    <task id="LOCAL-00004" summary="项目结构的创建-PMS基本框架的搭建（主从库实现，部分pms/ServiceImpl修改dubbo注解，pms/Entity所有添加getter、setter方法）">
+      <created>1579539577665</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579539577665</updated>
+    </task>
+    <task id="LOCAL-00005" summary="项目结构的创建-UMS部分功能（注册、校验），PMS功能（商品分类查询，品牌查询，综合查询）">
+      <created>1579700041846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579700041846</updated>
+    </task>
+    <task id="LOCAL-00006" summary="项目结构的创建-day07,后台服务除去oms之外基本完成">
+      <created>1580292828118</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1580292828118</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 15h 59m 34s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 01m 33s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 14m 27s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 14m 54s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 21m 12s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 28m 40s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 32m 15s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 33m 39s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 35m 02s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DmallSearchApplicationTests_dslTest - 2020.02.02 at 16h 46m 10s.xml">
+      <configuration name="DmallSearchApplicationTests.dslTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="208583000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4958949" visible="true" weight="0.2185501" />
+      <window_info id="Structure" order="1" sideWeight="0.5041051" side_tool="true" weight="0.18230277" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32855567" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3296582" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.33406836" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39911798" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3296582" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3296582" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5021322" side_tool="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="14" visible="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.4978678" weight="0.32745314" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49753696" visible="true" weight="0.18070363" />
+      <window_info id="Structure" order="1" sideWeight="0.50246304" side_tool="true" weight="0.18070363" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.32855567" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.33406836" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Spring" order="8" weight="0.3296582" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3296582" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50159913" side_tool="true" weight="0.32855567" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32855567" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" sideWeight="0.49840087" visible="true" weight="0.32855567" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="项目结构的创建" />
+    <MESSAGE value="项目结构的创建-逆向工程初始化" />
+    <MESSAGE value="项目结构的创建-PMS基本框架的搭建（主从库实现，部分pms/ServiceImpl修改dubbo注解，pms/Entity所有添加getter、setter方法）" />
+    <MESSAGE value="项目结构的创建-UMS部分功能（注册、校验），PMS功能（商品分类查询，品牌查询，综合查询）" />
+    <MESSAGE value="项目结构的创建-day07,后台服务除去oms之外基本完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目结构的创建-day07,后台服务除去oms之外基本完成" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="ZooKeeperConfig">
+    <option name="host" value="192.168.1.107" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>obj</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>json</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sso_user</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>searchResponse</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>attrs</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>attrVo</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>attrId</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>attr_agg</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>aggregations</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/search/SearchResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/service/impl/SearchProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/HELP.md" />
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-search/src/test/java/com/djl/dmall/search/DmallSearchApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-search/src/main/java/com/djl/dmall/search/DmallSearchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/LocksTestApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/AppJedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/config/RedissonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="74" lean-forward="true" selection-start-line="16" selection-start-column="74" selection-end-line="16" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedisIncrService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/controller/LockTestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/src/main/java/com/djl/dmall/locks/service/RedissonLockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0-sources.jar!/springfox/documentation/schema/XmlModelPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#saveProduct#0;class#ProductServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-pms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/GmallSwagger2Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-admin-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="27" selection-start-line="65" selection-start-column="8" selection-end-line="87" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/PoolProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/DmallShopPortalApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/controller/ProductSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/src/main/java/com/djl/dmall/portal/config/ThreadPoolConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/ssoserver/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-637">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.2.2.RELEASE/spring-boot-autoconfigure-2.2.2.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/thymeleaf/ThymeleafProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="41" column="71" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="71" />
+          <folding>
+            <element signature="e#3859#3860#0" expanded="true" />
+            <element signature="e#3886#3887#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/locks-test/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-shop-portal/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="79" column="21" selection-start-line="74" selection-start-column="8" selection-end-line="79" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client1/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client1/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.2.RELEASE/spring-web-5.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="72" selection-start-line="10" selection-start-column="72" selection-end-line="10" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/config/SsoConfigProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-admin-web/src/main/java/com/djl/dmall/admin/DmallAdminWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client1/src/main/java/com/djl/dmall/client1/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="807">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-333" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-pms/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/vo/ums/LoginResponseVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/DmallSsoServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/DmallUmsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/contant/SysCacheConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.2/dubbo-2.6.2-sources.jar!/com/alibaba/dubbo/rpc/proxy/InvokerInvocationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-mbg/src/main/java/com/djl/dmall/ums/mapper/MemberMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-api/src/main/java/com/djl/dmall/ums/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmall-sso-server/src/main/java/com/djl/dmall/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>dmall-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

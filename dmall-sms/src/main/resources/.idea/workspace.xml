@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c9e0598-905e-4820-8f3f-c6a976442909" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/oms/component/OssComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/oms/controller/OssController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsCouponController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsCouponHistoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsFlashPromotionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsFlashPromotionProductRelationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsFlashPromotionSessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsHomeAdvertiseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsHomeBrandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsHomeNewProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsHomeRecommendProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/sms/comtroller/SmsHomeRecommendSubjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/ums/controller/UmsMemberLevelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/contant/SysCacheConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/vo/sms/SmsCouponParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/vo/sms/SmsFlashPromotionProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/vo/sms/SmsFlashPromotionSessionDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/config/PmeRedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/config/PmsDataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/CouponHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/CouponMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/CouponProductCategoryRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/CouponProductRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/FlashPromotionLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/FlashPromotionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/FlashPromotionProductRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/FlashPromotionSessionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/HomeAdvertiseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/HomeBrandMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/HomeNewProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/HomeRecommendProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/mapper/HomeRecommendSubjectMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/CouponHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/CouponProductCategoryRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/CouponProductRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/CouponServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/FlashPromotionLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/FlashPromotionProductRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/FlashPromotionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/FlashPromotionSessionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/HomeAdvertiseServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/HomeBrandServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/HomeNewProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/HomeRecommendProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/service/impl/HomeRecommendSubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sharding-jdbc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/CouponHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/CouponMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/CouponProductCategoryRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/CouponProductRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/FlashPromotionLogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/FlashPromotionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/FlashPromotionProductRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/FlashPromotionSessionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/HomeAdvertiseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/HomeBrandMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/HomeNewProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/HomeRecommendProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xml/HomeRecommendSubjectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductAttributeCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductAttributeCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductAttributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductAttributeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/java/com/djl/dmall/admin/pms/controller/PmsProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-admin-web/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductAttributeCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductAttributeCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductAttributeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductAttributeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/pms/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/CouponHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/CouponHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/CouponService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/CouponService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionProductRelationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionProductRelationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionSessionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/FlashPromotionSessionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/HomeBrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/sms/service/HomeBrandService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/vo/PageInfoVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-api/src/main/java/com/djl/dmall/vo/PageInfoVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/DmallPmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/DmallPmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductAttributeCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductAttributeCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductAttributeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductAttributeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/java/com/djl/dmall/pms/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-pms/src/test/java/com/djl/dmall/pms/DmallPmsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-pms/src/test/java/com/djl/dmall/pms/DmallPmsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/djl/dmall/sms/DmallSmsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/djl/dmall/sms/DmallSmsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberLevelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../dmall-ums/src/main/java/com/djl/dmall/ums/service/impl/MemberLevelServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JAVA_Files\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../../../apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="D:\JAVA_Files\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="9" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal -Dfile.encoding=gbk" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1065" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c9e0598-905e-4820-8f3f-c6a976442909" name="Default Changelist" comment="" />
+      <created>1580103723908</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580103723908</updated>
+      <workItem from="1580103746213" duration="39000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="39000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="ZooKeeperConfig">
+    <option name="host" value="192.168.1.107" />
+    <option name="port" value="2181" />
+    <option name="charset" value="UTF-8" />
+    <option name="whitePaths" value="" />
+    <option name="enabled" value="true" />
+    <option name="tooltip" value="true" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>9</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

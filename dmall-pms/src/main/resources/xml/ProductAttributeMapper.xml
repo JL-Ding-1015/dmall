@@ -7,4 +7,6 @@
         id, product_attribute_category_id, name, select_type, input_type, input_list, sort, filter_type, search_type, related_status, hand_add_status, type
     </sql>
 
+
+
 </mapper>

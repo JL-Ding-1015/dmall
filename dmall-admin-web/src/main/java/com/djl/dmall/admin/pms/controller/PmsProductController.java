@@ -89,6 +89,7 @@ public class PmsProductController {
     public Object updatePublishStatus(@RequestParam("ids") List<Long> ids,
                                      @RequestParam("publishStatus") Integer publishStatus) {
         //TODO 批量上下架
+        productService.updatePublishStatus(ids, publishStatus);
         return new CommonResult().success(null);
     }
 
@@ -97,6 +98,7 @@ public class PmsProductController {
     public Object updateRecommendStatus(@RequestParam("ids") List<Long> ids,
                                       @RequestParam("recommendStatus") Integer recommendStatus) {
         //TODO 批量推荐商品
+        productService.updateRecommendStatus(ids, recommendStatus);
         return new CommonResult().success(null);
     }
 

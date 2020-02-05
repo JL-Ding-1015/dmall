@@ -2,6 +2,9 @@ package com.djl.dmall.pms.mapper;
 
 import com.djl.dmall.pms.entity.ProductAttribute;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.djl.dmall.to.es.EsProductAttributeValue;
+
+import java.util.List;
 
 /**
  * <p>

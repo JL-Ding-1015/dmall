@@ -7,4 +7,29 @@
         id, product_id, product_attribute_id, value
     </sql>
 
+
+    <!-- List<EsProductAttributeValue> selectBaseAttributeValues(Long id) -->
+    <select id="selectBaseAttributeValues" resultType="com.djl.dmall.to.es.EsProductAttributeValue">
+        SELECT pav.`product_id`, pav.`product_attribute_id`, pa.`name`, pav.`value`, pa.`type` FROM `pms_product` p
+        LEFT JOIN `pms_product_attribute` pa
+        ON p.`product_attribute_category_id` = pa.`product_attribute_category_id`
+        LEFT JOIN `pms_product_attribute_value` pav
+        ON pa.`id` = pav.`product_attribute_id`  AND p.`id` = pav.`product_id`
+        WHERE p.id = #{id} AND pa.type = 1;
+    </select>
+
+    <!--    List<String> selectSkuAttributeNames(Long id); -->
+    <select id="selectSkuAttributeNames" resultMap="esSkuAttributeValue">
+        SELECT pa.name, pa.id, pa.type
+        FROM `pms_product` p
+        LEFT JOIN `pms_product_attribute` pa
+        ON p.`product_attribute_category_id` = pa.`product_attribute_category_id`
+        WHERE p.id = #{id} AND pa.type = 0
+        ORDER BY pa.`sort` DESC;
+    </select>
+
+    <resultMap id="esSkuAttributeValue" type="com.djl.dmall.to.es.EsProductAttributeValue">
+        <result property="productAttributeId" column="id"/>
+    </resultMap>
+
 </mapper>
