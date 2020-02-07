@@ -7,12 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dmall-cart" />
+        <module name="dmall-shop-portal" />
         <module name="client1" />
-        <module name="dmall-ums" />
         <module name="dmall-oms" />
         <module name="dmall-pms" />
         <module name="dmall-sms" />
-        <module name="dmall-shop-portal" />
+        <module name="dmall-ums" />
         <module name="dmall-common" />
         <module name="locks-test" />
         <module name="dmall-sso-server" />
@@ -29,6 +30,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="client1" options="-parameters" />
       <module name="dmall-admin-web" options="-parameters" />
+      <module name="dmall-cart" options="-parameters" />
       <module name="dmall-oms" options="-parameters" />
       <module name="dmall-pms" options="-parameters" />
       <module name="dmall-search" options="-parameters" />

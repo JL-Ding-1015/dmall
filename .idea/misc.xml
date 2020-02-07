@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/locks-test/pom.xml" />
         <option value="$PROJECT_DIR$/client1/pom.xml" />
         <option value="$PROJECT_DIR$/dmall-sso-server/pom.xml" />
+        <option value="$PROJECT_DIR$/dmall-cart/pom.xml" />
       </list>
     </option>
   </component>
