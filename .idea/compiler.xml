@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dmall-cart" />
+        <module name="rabbit-test" />
         <module name="dmall-shop-portal" />
         <module name="client1" />
         <module name="dmall-oms" />
@@ -40,6 +41,7 @@
       <module name="dmall-ums" options="-parameters" />
       <module name="es-demo" options="-parameters" />
       <module name="locks-test" options="-parameters" />
+      <module name="rabbit-test" options="-parameters" />
     </option>
   </component>
 </project>
