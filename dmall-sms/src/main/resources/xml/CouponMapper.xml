@@ -7,4 +7,10 @@
         id, type, name, platform, count, amount, per_limit, min_point, start_time, end_time, use_type, note, publish_count, use_count, receive_count, enable_time, code, member_level
     </sql>
 
+    <!--List<Coupon> couponList = couponMapper.getCouponListByMemberId(Long skuId);-->
+    <select id="getCouponListByMemberId" resultType="com.djl.dmall.sms.entity.Coupon">
+        SELECT c.* FROM `sms_coupon_history` ch LEFT JOIN `sms_coupon` c ON ch.`coupon_id` = c.`id`
+        WHERE ch.`member_id` = #{id} AND ch.`use_status` = 0;
+    </select>
+
 </mapper>

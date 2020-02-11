@@ -8,7 +8,7 @@
     </sql>
 
 
-    <!-- List<EsProductAttributeValue> selectBaseAttributeValues(Long id) -->
+    <!-- List<EsProductAttributeValue> selectBaseAttributeValues(Long skuId) -->
     <select id="selectBaseAttributeValues" resultType="com.djl.dmall.to.es.EsProductAttributeValue">
         SELECT pav.`product_id`, pav.`product_attribute_id`, pa.`name`, pav.`value`, pa.`type` FROM `pms_product` p
         LEFT JOIN `pms_product_attribute` pa
@@ -18,7 +18,7 @@
         WHERE p.id = #{id} AND pa.type = 1;
     </select>
 
-    <!--    List<String> selectSkuAttributeNames(Long id); -->
+    <!--    List<String> selectSkuAttributeNames(Long skuId); -->
     <select id="selectSkuAttributeNames" resultMap="esSkuAttributeValue">
         SELECT pa.name, pa.id, pa.type
         FROM `pms_product` p

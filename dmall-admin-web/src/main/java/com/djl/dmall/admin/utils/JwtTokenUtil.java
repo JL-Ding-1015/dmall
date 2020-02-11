@@ -20,7 +20,7 @@ import java.util.Map;
  * header的格式（算法、token的类型）：
  * {"alg": "HS512","typ": "JWT"}
  * payload的格式（用户名、创建时间、生成时间）：
- *      {"id":1,"sub":"wang","created":1489079981393,"exp":1489684781}
+ *      {"skuId":1,"sub":"wang","created":1489079981393,"exp":1489684781}
  */
 @Component
 public class JwtTokenUtil {

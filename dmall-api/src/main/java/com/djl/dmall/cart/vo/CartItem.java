@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 public class CartItem implements Serializable {
     //当前购物项
     @Getter
-    private Long id;
+    private Long skuId;
     @Getter
     private Long productId;
     @Getter
@@ -55,4 +55,6 @@ public class CartItem implements Serializable {
 
         return calcPrice;
     }
+
+
 }

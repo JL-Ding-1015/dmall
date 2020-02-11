@@ -61,7 +61,7 @@ public class CartServiceImpl implements CartService {
     @Override
     public CartResponse addToCart(Long skuId, Integer num, String cartKey, String accessToken) throws ExecutionException, InterruptedException {
         String redisCartKey = "";
-        //1.是登录，在线购物车 cart:user:id
+        //1.是登录，在线购物车 cart:user:skuId
         //2.否登录，离线购物车 cart:temp:cartKey
         //3.都没有 新建一个临时购物车
         if (!StringUtils.isEmpty(accessToken)) {
@@ -188,6 +188,18 @@ public class CartServiceImpl implements CartService {
         return cartResponse;
     }
 
+    @Override
+    public Boolean delCartItems(List<Long> skuIdList, String accessToken) {
+        String redisCartKey = memberComponent.getCartKey(accessToken, "");
+        RMap<Object, Object> cartMap = redissonClient.getMap(redisCartKey);
+        for (Long skuId : skuIdList) {
+            cartMap.remove(skuId.toString());
+        }
+        //移除勾选的状态保存
+        cartMap.put(CartConstant.CART_CHECKED_KEY,JSON.toJSONString(new LinkedHashSet<Long>()));
+        return null;
+    }
+
     /**
      * 清空购物车
      * @param cartKey
@@ -231,6 +243,34 @@ public class CartServiceImpl implements CartService {
 
         CartResponse cartResponse = new CartResponse();
         return cartResponse;
+    }
+
+    /**
+     * 根据accessToken返回购物车种商品选中的项目
+     * @param accessToken
+     * @return
+     */
+    @Override
+    public List<CartItem> getCartItemListForOrder(String accessToken) {
+
+        String redisCartKey = memberComponent.getCartKey(accessToken,"");
+        RMap<String, String> cartMap = redissonClient.getMap(redisCartKey);
+        List<CartItem> cartItemList = new ArrayList<>();
+        if (cartMap != null && !cartMap.isEmpty()) {
+            //购物车有东西
+            cartMap.entrySet().forEach((entry) -> {
+                String key = entry.getKey();
+                if (!key.equalsIgnoreCase("checked")) {
+                    String skuId = entry.getKey();
+                    String itemJson = entry.getValue();
+                    CartItem cartItem = JSON.parseObject(itemJson, CartItem.class);
+                    if (cartItem.isCheck()) {
+                        cartItemList.add(cartItem);
+                    }
+                }
+            });
+        }
+        return cartItemList;
     }
 
     /**
@@ -307,7 +347,7 @@ public class CartServiceImpl implements CartService {
             Long productId = skuStock.getProductId();
             Product product = productService.getById(productId);
             BeanUtils.copyProperties(skuStock, newCartItem);
-            newCartItem.setId(skuStock.getId());
+            newCartItem.setSkuId(skuStock.getId());
             newCartItem.setName(product.getName());
             newCartItem.setCount(num);
         });

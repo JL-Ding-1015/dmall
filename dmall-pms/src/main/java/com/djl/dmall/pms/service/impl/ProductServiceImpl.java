@@ -459,7 +459,7 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
         EsProduct esProduct = null;
         SearchSourceBuilder builder = new SearchSourceBuilder();
         builder.query(QueryBuilders.nestedQuery("skuProductInfos",
-                QueryBuilders.termQuery("id", id), ScoreMode.None));
+                QueryBuilders.termQuery("skuProductInfos.id", id), ScoreMode.None));
 
 
         Search search = new Search.Builder(builder.toString())

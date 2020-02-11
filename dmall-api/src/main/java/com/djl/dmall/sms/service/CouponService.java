@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.djl.dmall.vo.PageInfoVo;
 import com.djl.dmall.vo.sms.SmsCouponParam;
 
+import java.util.List;
+
 /**
  * <p>
  * 优惠卷表 服务类
@@ -46,4 +48,11 @@ public interface CouponService extends IService<Coupon> {
      * @return
      */
     SmsCouponParam getCouponItemInfo(Long id);
+
+    /**
+     * 根据用户id查看没使用的优惠券
+     * @param id
+     * @return
+     */
+    List<Coupon> getCouponListByMemberId(Long id);
 }

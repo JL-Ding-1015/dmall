@@ -2,7 +2,9 @@ package com.djl.dmall.cart.service;
 
 import com.djl.dmall.cart.vo.CartItem;
 import com.djl.dmall.cart.vo.CartResponse;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
+import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 /**
@@ -46,6 +48,14 @@ public interface CartService {
     CartResponse delCartItem(Long skuId, String cartKey, String accessToken);
 
     /**
+     * 删除多个条目
+     * @param skuIdList
+     * @param accessToken
+     * @return
+     */
+    Boolean delCartItems(List<Long> skuIdList, String accessToken);
+
+    /**
      * 删除整个购物车
      * @param cartKey
      * @param accessToken
@@ -62,4 +72,11 @@ public interface CartService {
      * @return
      */
     CartResponse checkCartItems(Long[] skuIds, Integer ops, String cartKey, String accessToken);
+
+    /**
+     * 为订单返回选中的购物项
+     * @param accessToken
+     * @return
+     */
+    List<CartItem> getCartItemListForOrder(String accessToken);
 }

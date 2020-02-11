@@ -106,4 +106,10 @@ public class CouponServiceImpl extends ServiceImpl<CouponMapper, Coupon> impleme
         }
         return smsCouponParam;
     }
+
+    @Override
+    public List<Coupon> getCouponListByMemberId(Long id) {
+        List<Coupon> couponList = couponMapper.getCouponListByMemberId(id);
+        return couponList;
+    }
 }

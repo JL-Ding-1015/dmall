@@ -36,7 +36,7 @@ public class PmsProductController {
 //        log.debug("将要保存的商品数据是：{}",productParam);
 
 
-//        log.debug("当前线程....{}-->{}",Thread.currentThread().getId(),Thread.currentThread().getName());
+//        log.debug("当前线程....{}-->{}",Thread.currentThread().getSkuId(),Thread.currentThread().getName());
         productService.saveProduct(productParam);
 
         return new CommonResult().success(null);
